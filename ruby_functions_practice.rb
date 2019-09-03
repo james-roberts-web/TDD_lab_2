@@ -30,45 +30,42 @@ def add_string_as_number(string_1, string_2)
   return string_1.to_i + string_2.to_i
 end
 
-#
-# def number_to_full_name(number)
-#   case month
-#   when number
-#       puts number_to_full_month_name
-#   end
-# end
-#
-# def number_to_full_name(month)
-#   return number_to_full_month_name puts "#{month}"
-# end
-#
-#
-#
-#   case intiger
-#   when 1
-#     return "one"
-#   end
-#
-#   def number_to_full_month_name(number)
-#     case intiger
-#     when "one"
-#       puts "January"
-#     end
-#   end
-#
-#
 
-def number_to_full_name()
-  case number_to_full_month_name
-  when "One"
+
+
+def number_to_full_month_name(number)
+  case
+  when number == 1
     return "January"
-
-
-
+  when number == 3
+    return "March"
+  when number == 9
+    return "September"
+  end
 end
 
-
-#
-#
-#   return number_to_full_month_name()
+# def substring(month_number)
+#   case
+#   when month_number == 1
+#     return "Jan"
+#   when month_number == 4
+#     return "Apr"
+#   when month_number == 10
+#     return "Oct"
+#   end
 # end
+
+def number_to_short_month_name(number)
+  case
+  when number == 1
+    return "Jan"
+  when number == 4
+    return "Apr"
+  when number == 10
+    return "Oct"
+  end
+end
+
+def volume_of_cube(length)
+  return length ** 3
+end
